@@ -1,0 +1,74 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <script src="script.js" defer></script>
+    <link rel="stylesheet" href="style.css">
+    <meta charset="UTF-8"> 
+</head>
+<body>
+    <nav id="nav">
+        <button class="nav-button" type="button" onclick="showResume()">RESUMÉ</button>
+        <button class="nav-button" type="button" onclick="showProjects()">PROJECTS</button>
+        <button class="nav-button" type="button" onclick="showContact()">CONTACT</button>
+        <button class="nav-button" type="button" onclick="switchMode()" id="dark-mode">LIGHT 🌞</button>
+    </nav>
+
+    <div id="view-body">
+        <header>
+            <h1 id="name">Perry M</h1>
+        </header>
+
+        <hr>
+        <div id="content">
+            <div id="resume">
+                <h3>Qualifications</h3>
+                <ul>
+                    <li>Bachelor of Computer Science (Deakin University)</li>
+                    <li>CompTIA Security+</li>
+                    <li>CEH Council</li>
+                </ul>
+                <p></p>
+                <hr>
+                <h3>Timeline</h3>
+                <p>
+                    <ul>
+                    2018 - Graduated from Canberra College<br><br>
+                    2019 - Enlisted in the Australian Army reserve as a Communication Systems Operator<br><br>
+                    2021 - Commenced Bachelor of Computer Science at Deakin University<br><br>
+                    2023 - Interned as a Cyber Analyst at ST United Software<br><br>
+                    2023 - Graduated from Deakin University<br><br>
+                    2024 - Began role as Digital Graduate at the Department of Home Affairs<br><br>
+                    2024 - Attained Security+ certification<br><br>
+                    </ul>
+                </p>
+                <hr>
+                <h3>Will to live</h3>
+                <p>None</p>
+            </div>
+
+            <div id="projects" class="secondary">
+                <h3>Projects</h3>
+                <p>blah blah blah</p>
+            </div>
+
+            <div id="contact" class="secondary">
+                <h3>Contact</h3>
+                <br>
+                <form id="contactForm" method="POST" action="sendmail.php">
+                    <div class="form-row">
+                        <label for="form-email">Email:</label>
+                        <input id="form-email" class="form-input" type="email" name="email" required>
+                    </div>     
+                    <br>
+                    <div class="form-row">
+                        <label for="form-message">Message:</label>
+                        <textarea id="form-message" class="form-input" name="message" required></textarea>
+                    </div>            
+                    <br>
+                    <button type="submit">Submit</button>
+                </form>
+            </div>
+        </div>
+    </div>
+</body>
+</html>
