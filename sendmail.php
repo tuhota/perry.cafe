@@ -1,7 +1,6 @@
 if ($_SERVER["REQUEST_METHOD"] == "POST") {
     if(
-        !empty($_POST['name'])
-        && !empty($_POST['email'])
+        !empty($_POST['email'])
         && !empty($_POST['message'])
     ){
         $name = $_POST["name"];
